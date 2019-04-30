@@ -1,0 +1,34 @@
+:root {
+  --main-color: whitesmoke;
+  --main-sub-color: rgb(152, 135, 177);
+}
+
+#app {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+  "m1 m2"
+  "ft ft";
+}
+.main1 {
+  grid-area: m1;
+  background-color: var(--main-color)
+}
+.main2 {
+  grid-area: m2;
+  background-color: var(--main-color);
+}
+.footer {
+  text-align: center;
+  grid-area: ft;
+  background-color: var(--main-sub-color);
+}
+.social-link {
+  margin: 0px;
+  padding: 0px 28px;
+  text-decoration: none;
+}
+.social-link > img {
+  width: 32px;
+  height: 32px;
+}
