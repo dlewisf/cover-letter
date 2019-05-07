@@ -1,6 +1,6 @@
 :root {
-  --main-color: whitesmoke;
-  --main-sub-color: rgb(152, 135, 177);
+  --main-color: #f2bb69;
+  --main-sub-color: #f6e284;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
 }
 
 #app {
+  background: linear-gradient(var(--main-color), var(--main-sub-color));
   display: grid;
   position: absolute;
   width: 100vw;
@@ -20,12 +21,10 @@ body {
 }
 .main {
   grid-area: m1;
-  background-color: var(--main-color)
 }
 .footer {
   text-align: center;
   grid-area: ft;
-  background-color: var(--main-sub-color);
   padding-top: 10px;
 }
 .social-link {
