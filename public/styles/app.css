@@ -14,13 +14,25 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 11fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 1fr 10fr 1fr;
   grid-template-areas:
-  "m1 m1"
-  "ft ft";
+  "hd hd hd" 
+  "ls main rs"
+  "ft ft ft";
+}
+.left-side {
+  grid-area: ls;
+}
+.right-side {
+  grid-area: rs;
+}
+.header {
+  grid-area: hdl;
 }
 .main {
-  grid-area: m1;
+  max-width: 1280px;
+  grid-area: main;
 }
 .footer {
   text-align: center;
