@@ -14,8 +14,8 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 1fr 10fr 1fr;
-  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
   "hd hd hd" 
   "ls main rs"
@@ -28,10 +28,9 @@ body {
   grid-area: rs;
 }
 .header {
-  grid-area: hdl;
+  grid-area: hd;
 }
 .main {
-  max-width: 1280px;
   grid-area: main;
 }
 .footer {
