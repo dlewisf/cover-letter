@@ -3,8 +3,9 @@ const path = require('path');
 const app = express();
 const package = require('../package.json');
 
-app.use(express.static('public'));;
-app.use('/vendor', express.static(path.join(__dirname , '..', 'node_modules')));
+app.use(express.static('public'));
+app.use(express.static('vendor'));
+// app.use('/vendor', express.static(path.join(__dirname , '..', 'vendor')));
 app.get('/', (req, res)=> res.send(path.join(__dirname , '..', 'public/index.html')));
 
 

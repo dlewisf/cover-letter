@@ -4,7 +4,7 @@
     <title>Title for the cover letter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="styles/app.css"/>
-    <script src="vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="svg-injector.min.js"></script>
   </head>
 
   <body>
@@ -24,10 +24,9 @@
         </a>
       </div>
     </div>
-    <script>
+    <script type="text/javascript">
       // Elements to inject
-      var mySVGsToInject = document.querySelectorAll('img.inject');
-    
+      const mySVGsToInject = document.querySelectorAll('img.inject');
       // Do the injection
       SVGInjector(mySVGsToInject);
     </script>
