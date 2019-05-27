@@ -1,12 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 85" preserveAspectRatio="xMinYMin">
     <mask id="content-mask">
-        <rect x="2" y="2" width="128" height="66" rx="0" fill="#ffffff"/>
+        <rect x="2" y="2" width="128" height="70" rx="0" fill="#ffffff"/>
     </mask>
     <!-- Stand Base -->
-    <!-- <path fill="none" stroke="#313131" d="M 39,76 c0,0,-3,4,2,2 "/> -->
+    <!-- <path fill="#191919" stroke="#191919" 
+    d="M 55,77 
+       c 0,0, -15,6, 0,7
+       l 26, 0 
+       c 0,0 15,0 0,-7
+       c 0,0, -13,-5 -26,0
+       "/> -->
+       <!-- <ellipse cx="68." cy="80" rx="20" ry="5" /> -->
+       <rect x="52" y="79" width="30" height="5" rx="1" fill="#000" stroke="#000" stroke-width="1"/>
     <!-- Stand Neck -->
-    <path fill="#313131" stroke="#313131" d="M 49,68 l-1,8 l42,0 l-1,-8 z"/>
+    <polygon points="60,72 59,79 
+                     75,79 74,72" 
+    fill="#191919" stroke="none" stroke-width="0" />
+
     <!-- Monitor rect -->
-    <rect x="2" y="2" width="128" height="66" rx="0" fill="none" stroke="#191919" stroke-width="2"/>
+    <rect x="2" y="2" width="128" height="70" rx="0" fill="none" stroke="#191919" stroke-width="2"/>
     <image href="img\1280px-Minneapolis_skyline_151.jpg" x="-50" y="-18" width="200" mask="url(#content-mask)" />
+    <!-- bottom bezel -->
+    <rect x="2" y="70" width="128" height="2" rx="0" fill="#191919" stroke="#191919" stroke-width="1"/>
 </svg>
