@@ -7,51 +7,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--main-sub-color);
+  overflow: hidden;
 }
 
 #app {
   background: linear-gradient(var(--main-color), var(--main-sub-color));
-  display: grid;
+  /* display: grid; */
   position: absolute;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas:
-  "hd hd hd" 
-  "ls main rs"
-  "ft ft ft";
-}
-.left-side {
-  grid-area: ls;
-}
-.right-side {
-  grid-area: rs;
-}
-.header {
-  grid-area: hd;
-}
-.main {
-  grid-area: main;
-}
-.footer {
-  text-align: center;
-  grid-area: ft;
-  padding-top: 10px;
-}
-.social-link {
-  margin: 0px;
-  padding: 0px 48px;
-  text-decoration: none;
-}
-.logo {
-  width: 32px;
-  height: 32px;
-  padding-bottom: 10px;
-}
-.twitter-logo {
-  width: 48px;
-  height: 48px;
-  padding-bottom: 0px
 }
 
+.inject { position:fixed; top:0; bottom:0; height:100%; width:100% }
